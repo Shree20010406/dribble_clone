@@ -1,0 +1,185 @@
+@font-face {
+    font-family: mona;
+    src: url(./Mona-Sans-f258701679eace96725e03121950af40ae6e4ceef03b21242c66a3b7ae6ccbf4.ttf);
+}
+
+@font-face {
+    font-family: source;
+    src: url(./vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;  
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #F8F7F4;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+#nav-1{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-1 h4{
+    font-weight: 600;
+    color: #444;
+    font-size: .9vw;
+}
+
+#nav-2{
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* background: yellow; */
+}
+
+#nav-2 input{
+    padding: 1vw 2.4vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+}
+
+#nav-2 button{
+    padding: 1vw 1.5vw;
+    border: 0;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+#nav-2 button:nth-child(2){
+    /* margin-right: 7px; */
+    background-color: transparent;
+    color: black;
+}
+
+nav img{
+    height: 55px;
+}
+#content{
+    padding-top: 5vw;
+}
+#content h2{
+    background: #FFDA7A;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    font-size: 1vw;
+    font-family: source;
+    border-radius: 34px;
+    padding: .7vw 1.5vw;
+    font-weight: 300;
+    transform: translateX(-50%);
+
+}
+
+#content h1{
+    text-align: center;
+    font-size: 4.7vw;
+    margin-top: 1vw;
+    font-weight: 100;
+    font-family: source;
+    line-height: 4.7vw;
+}
+#content h4{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-top: 1vw;
+}
+
+#content button{
+    
+    padding: 1vw 1vw;
+    border: 0;
+    font-size: 1vw;
+    margin-top: 2vw;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom{
+    width: 100%;
+    height: 350px;
+    /* backgro und: red; */
+    padding: 2vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 3vw;
+    white-space: nowrap;
+}
+
+.elem{
+   display: inline-block;
+    width: 250px;
+    height: 100%;
+    background: rgb(0, 255, 140);
+    border-radius: 20px;
+    animation-name: markquee;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-right: 20px;
+}
+
+@keyframes markquee {
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 24px));
+    }
+    
+}
+
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.elem video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
